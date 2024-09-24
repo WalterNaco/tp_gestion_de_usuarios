@@ -52,12 +52,6 @@ const getUserById = (id) => {
   }
 };
 
-// addUser recibe un objeto con toda la data para el nuevo usuario
-// valida que esten los datos míminos para añadir un nuevo usuario
-// valida que el nombre sea un string
-// valida que el apellido sea un string
-// valida que el email sea un string y que no se repita
-// hashea la contraseña antes de registrar al usuario
 const addUser = (userData) => {
   try {
     const {nombre, apellido, email, password} =  userData;
@@ -106,9 +100,6 @@ const addUser = (userData) => {
   }
 };
 
-// todos los datos del usuario seleccionado se podrían modificar menos el ID
-// si se modifica la pass debería ser nuevamente hasheada
-// si se modifica el email, validar que este no exista
 const updateUser = (userData) => {
   try {
     const {id, nombre, apellido, email, password} =  userData;
